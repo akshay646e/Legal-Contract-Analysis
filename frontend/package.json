@@ -1,0 +1,15 @@
+{
+  "name": "lexai-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LexAI Enterprise Legal Contract Analysis Dashboard UI",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

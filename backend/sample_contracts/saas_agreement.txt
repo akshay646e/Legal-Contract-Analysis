@@ -1,0 +1,35 @@
+MASTER SOFTWARE-AS-A-SERVICE (SaaS) AGREEMENT
+
+This Master Software-as-a-Service Agreement ("Agreement") is made effective as of November 1, 2026, by and between:
+Vendor: CloudTitan Systems Inc. ("Vendor"), with offices at 77 Cyber Plaza, New York, NY 10001, and
+Customer: Global Retail Operations Ltd. ("Customer"), with offices at 1200 Market Street, Chicago, IL 60601.
+
+1. SUBSCRIPTION SERVICES
+Vendor grants Customer a non-exclusive, non-transferable right to access and use the CloudTitan enterprise platform solely for Customer's internal business operations during the Subscription Term.
+
+2. FEES AND PAYMENT TERMS
+Customer shall pay all subscription fees within fifteen (15) days of invoice date. Any overdue amounts shall accrue interest at 1.5% per month or the maximum rate permitted by law. All fees are non-refundable. Vendor reserves the right to increase fees at any time upon thirty (30) days written notice without limitation.
+
+3. TERM AND AUTOMATIC RENEWAL
+The initial term shall be three (3) years ("Initial Term"). This Agreement shall automatically renew for successive two (2) year terms unless Customer provides written notice of non-renewal at least ninety (90) days prior to the expiration of the current term.
+
+4. TERMINATION FOR CAUSE
+Either party may terminate this Agreement if the other party breaches any material term and fails to cure such breach within thirty (30) days of written notice. Upon termination, Customer shall immediately pay all remaining fees due through the end of the full Subscription Term as liquidated damages.
+
+5. DATA OWNERSHIP AND PRIVACY
+Customer owns Customer Data. Customer grants Vendor a perpetual, irrevocable, worldwide license to use, aggregate, anonymize, and derive statistical models from Customer Data for product enhancement and commercial AI model training.
+
+6. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, VENDOR'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE TOTAL FEES PAID BY CUSTOMER IN THE PRECEDING ONE (1) MONTH. IN NO EVENT SHALL VENDOR BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, OR LOSS OF DATA. CUSTOMER'S LIABILITY UNDER THIS AGREEMENT IS UNLIMITED.
+
+7. INDEMNIFICATION
+Customer shall defend, indemnify, and hold harmless Vendor, its officers, directors, and employees against any third-party claim, lawsuit, loss, or expense arising out of Customer's use of the Service, data submitted, or alleged breach of any law or third-party intellectual property right. Vendor provides no indemnification for intellectual property infringement.
+
+8. SERVICE LEVEL AGREEMENT (SLA) AND DOWNTIME
+Vendor will use commercially reasonable efforts to maintain 99.0% availability during normal business hours. Planned maintenance shall not count towards downtime. Customer's sole and exclusive remedy for any service failure or breach of SLA shall be service credits capped at 5% of monthly fees.
+
+9. GOVERNING LAW AND ARBITRATION
+This Agreement shall be governed by the laws of the State of New York without regard to choice of law principles. Any dispute shall be resolved through binding confidential arbitration under AAA rules in New York, NY. BOTH PARTIES IRREVOCABLY WAIVE ANY RIGHT TO A JURY TRIAL OR TO PARTICIPATE IN A CLASS ACTION LAWSUIT.
+
+10. ENTIRE AGREEMENT
+This Agreement constitutes the entire agreement between Vendor and Customer.

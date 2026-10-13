@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LexAI | Legal Contract Analysis & Intelligence Engine</title>
+  <meta name="description" content="AI-powered legal contract analysis, clause extraction, risk assessment, and RAG-based due diligence platform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div class="brand-text">
+          <h1>LexAI <span>Enterprise</span></h1>
+          <p>Contract Due Diligence & Risk Intelligence</p>
+        </div>
+      </div>
+      <div class="header-stats" id="headerStats">
+        <div class="stat-pill">
+          <span class="stat-label">Total Contracts:</span>
+          <span class="stat-val" id="statTotalContracts">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">Analyzed:</span>
+          <span class="stat-val text-green" id="statAnalyzedContracts">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-label">High Risks:</span>
+          <span class="stat-val text-red" id="statHighRisks">0</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="badge mode-badge" id="aiModeBadge"><i class="fa-solid fa-microchip"></i> AI Ready</span>
+        <a href="/docs" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-code"></i> API Docs
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Workspace Grid -->
+    <div class="workspace-grid">
+      <!-- Left Panel: Contract Library & Upload -->
+      <aside class="sidebar-panel">
+        <div class="panel-section upload-box-container">
+          <h3><i class="fa-solid fa-cloud-arrow-up"></i> Upload Agreement</h3>
+          <div class="upload-dropzone" id="dropzone">
+            <input type="file" id="fileInput" accept=".pdf,.docx,.txt" style="display: none;">
+            <i class="fa-solid fa-file-contract drop-icon"></i>
+            <p><strong>Click to browse</strong> or drag & drop</p>
+            <span class="file-hint">PDF, DOCX, or TXT (Max 25MB)</span>
+          </div>
+          <div id="uploadProgress" class="upload-progress hidden">
+            <div class="spinner"></div>
+            <span id="uploadStatusText">Ingesting contract & indexing chunks...</span>
+          </div>
+        </div>
+
+        <div class="panel-section contract-list-section">
+          <div class="section-header">
+            <h3><i class="fa-solid fa-folder-open"></i> Contract Library</h3>
+            <button class="btn-icon" id="btnRefreshList" title="Refresh contracts"><i class="fa-solid fa-arrows-rotate"></i></button>
+          </div>
+          <div class="contract-list" id="contractList">
+            <div class="empty-state-small">No contracts uploaded yet.</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center Panel: Contract Analysis & Insights -->
+      <main class="analysis-panel">
+        <!-- Active Contract Ribbon -->
+        <div class="active-contract-ribbon" id="activeContractRibbon">
+          <div class="ribbon-info">
+            <h2 id="activeContractTitle">Select a contract to review</h2>
+            <div class="ribbon-meta" id="activeContractMeta">
+              <span>Status: --</span>
+              <span>Size: --</span>
+            </div>
+          </div>
+          <div class="ribbon-actions" id="ribbonActions" style="display: none;">
+            <button class="btn btn-primary" id="btnRunPipeline">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> Run AI Analysis
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="analysis-tabs" id="analysisTabs">
+          <button class="tab-btn active" data-tab="tab-summary"><i class="fa-solid fa-file-lines"></i> Executive Summary</button>
+          <button class="tab-btn" data-tab="tab-clauses"><i class="fa-solid fa-list-check"></i> Key Clauses</button>
+          <button class="tab-btn" data-tab="tab-risks"><i class="fa-solid fa-triangle-exclamation"></i> Risk & Redlines</button>
+          <button class="tab-btn" data-tab="tab-document"><i class="fa-solid fa-book-open"></i> Full Document</button>
+        </nav>
+
+        <!-- Tab Contents -->
+        <div class="tab-contents">
+          <!-- 1. Executive Summary Tab -->
+          <div class="tab-pane active" id="tab-summary">
+            <div id="summaryContent" class="empty-tab-state">
+              <i class="fa-solid fa-newspaper state-icon"></i>
+              <p>Upload a contract and click <strong>"Run AI Analysis"</strong> to generate the executive summary.</p>
+            </div>
+          </div>
+
+          <!-- 2. Clauses Tab -->
+          <div class="tab-pane" id="tab-clauses">
+            <div id="clausesContent" class="empty-tab-state">
+              <i class="fa-solid fa-file-shield state-icon"></i>
+              <p>Key extracted legal clauses (Termination, Indemnity, Liability) will appear here.</p>
+            </div>
+          </div>
+
+          <!-- 3. Risk & Redlines Tab -->
+          <div class="tab-pane" id="tab-risks">
+            <div id="risksContent" class="empty-tab-state">
+              <i class="fa-solid fa-shield-halved state-icon"></i>
+              <p>Risk audit findings, severity scoring, and proposed redline amendments will appear here.</p>
+            </div>
+          </div>
+
+          <!-- 4. Full Document Tab -->
+          <div class="tab-pane" id="tab-document">
+            <div class="document-viewer">
+              <pre id="rawDocumentText" class="document-pre">Select a contract to view document text.</pre>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Panel: Grounded RAG Chat Assistant -->
+      <aside class="chat-panel">
+        <div class="chat-header">
+          <div class="chat-title">
+            <i class="fa-solid fa-comments"></i>
+            <div>
+              <h3>Legal RAG Copilot</h3>
+              <p>Context-aware answers with citations</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-bubble bot-bubble">
+            <div class="bubble-avatar"><i class="fa-solid fa-robot"></i></div>
+            <div class="bubble-content">
+              <p>Hello! I am your AI Legal Assistant. Select an uploaded agreement and ask me anything about obligations, liability caps, termination rights, or indemnity clauses.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Prompt Chips -->
+        <div class="prompt-chips" id="promptChips">
+          <button class="chip" data-prompt="What is the limitation of liability cap?">Liability cap?</button>
+          <button class="chip" data-prompt="What are the termination requirements and notice periods?">Termination?</button>
+          <button class="chip" data-prompt="Who provides indemnification and for what?">Indemnity?</button>
+        </div>
+
+        <!-- Chat Input Form -->
+        <form class="chat-input-form" id="chatForm">
+          <input type="text" id="chatInput" placeholder="Ask about this agreement..." autocomplete="off">
+          <button type="submit" id="btnSendChat" class="btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </aside>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

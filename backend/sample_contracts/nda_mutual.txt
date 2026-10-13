@@ -1,0 +1,58 @@
+MUTUAL NONDISCLOSURE AGREEMENT
+
+This Mutual Nondisclosure Agreement ("Agreement") is entered into as of October 15, 2026 ("Effective Date"), by and between:
+
+Party A: Apex Digital Solutions Inc., a Delaware corporation with its principal office at 100 Innovation Way, Suite 400, San Francisco, CA 94105 ("Apex"), and
+Party B: Horizon Cloud Dynamics LLC, a California limited liability company with its principal office at 500 Enterprise Blvd, Austin, TX 78701 ("Horizon").
+
+1. PURPOSE
+The parties wish to explore a potential business relationship or transaction regarding cloud computing services and AI infrastructure integration (the "Purpose"). In connection with the Purpose, each party may disclose to the other party certain confidential and proprietary information.
+
+2. CONFIDENTIAL INFORMATION
+"Confidential Information" means any proprietary information, technical data, trade secrets, know-how, software, source code, business plans, financial projections, customer lists, and terms of this Agreement disclosed by one party ("Disclosing Party") to the other party ("Receiving Party"), whether orally or in writing, designated as confidential or which reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure.
+
+3. EXCLUSIONS FROM CONFIDENTIALITY
+Confidential Information does not include information that:
+(a) is or becomes publicly known through no breach of this Agreement by Receiving Party;
+(b) was already known to Receiving Party prior to disclosure without an obligation of confidentiality;
+(c) is independently developed by Receiving Party without reference to or reliance on Disclosing Party's Confidential Information; or
+(d) is rightfully obtained from a third party without breach of any confidentiality obligation.
+
+4. OBLIGATIONS OF RECEIVING PARTY
+The Receiving Party agrees to:
+(a) hold Disclosing Party's Confidential Information in strict confidence and take reasonable precautions to protect such information, exercising no less than the degree of care it uses for its own confidential information of like importance, but in no event less than reasonable care;
+(b) not disclose Confidential Information to any third party except to its employees, officers, directors, contractors, and legal/financial advisors who need to know such information for the Purpose and who are bound by confidentiality obligations at least as restrictive as those herein;
+(c) use Confidential Information solely for the Purpose.
+
+5. NON-SOLICITATION AND RESTRICTIVE COVENANTS
+For a period of three (3) years following the Effective Date, neither party shall directly or indirectly solicit, recruit, induce, or attempt to hire any employee, consultant, or executive of the other party who was introduced or involved in discussions pursuant to this Agreement without prior written consent.
+
+6. TERM AND TERMINATION
+This Agreement shall govern disclosures made for a period of one (1) year from the Effective Date. The obligations of confidentiality shall survive termination and continue for a period of five (5) years following receipt of the Confidential Information; provided, however, that trade secrets shall remain confidential in perpetuity.
+
+7. RETURN OR DESTRUCTION OF MATERIALS
+Upon written request or termination of this Agreement, the Receiving Party shall promptly return or certify the permanent destruction of all copies of Disclosing Party's Confidential Information within fourteen (14) calendar days.
+
+8. REMEDIES AND INJUNCTIVE RELIEF
+The Receiving Party acknowledges that any unauthorized disclosure or use of Confidential Information will cause irreparable harm for which damages would be inadequate. Accordingly, Disclosing Party shall be entitled to seek equitable relief, including injunctive relief and specific performance, in addition to all other remedies available at law or in equity, without the necessity of posting a bond.
+
+9. INDEMNIFICATION AND LIABILITY
+The Receiving Party agrees to indemnify, defend, and hold harmless Disclosing Party, its affiliates, directors, and employees against any losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or resulting from any material breach of this Agreement. In no event shall either party's aggregate liability under this Agreement exceed $1,000,000 USD, except in cases of gross negligence, intentional misconduct, or willful breach of Section 4.
+
+10. GOVERNING LAW AND JURISDICTION
+This Agreement shall be governed by, and construed in accordance with, the laws of the State of Delaware, without giving effect to conflict of laws principles. Any legal suit, action, or proceeding arising out of or relating to this Agreement shall be instituted exclusively in the state or federal courts located in New Castle County, Delaware, and each party irrevocably submits to the exclusive jurisdiction of such courts.
+
+11. MISCELLANEOUS
+This Agreement constitutes the entire understanding between the parties with respect to the subject matter hereof and supersedes all prior discussions. No modification or waiver shall be binding unless in writing signed by authorized representatives of both parties.
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the Effective Date.
+
+Apex Digital Solutions Inc.
+By: _____________________________
+Name: Marcus Vance
+Title: Chief Technology Officer
+
+Horizon Cloud Dynamics LLC
+By: _____________________________
+Name: Elena Rostova
+Title: VP of Business Development
